@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            margin: 0;
+        }
+        #container{
+            background-image: url("download.jpg");
+            height: 700px;
+            width: 100%;
+            background-size: 100%;
+        }
+        #horizontal{
+            height: 50px;
+            width: 100%;
+            opacity: 0.8;
+            margin-top: 300px;
+            float: left;
+        }
+        button{
+            width: 7%;
+            height: 40px;
+            margin-top: 10px;
+            margin-left: 42px;
+            background-color: transparent;
+            border: solid 2px wheat;
+            color: whitesmoke;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="horizontal">
+
+        <Button id="65" onclick="playBtn1()" >Sound 1</Button>
+        <Button id="83" onclick="playBtn2()">Sound 2</Button>
+        <Button id="btn3" onclick="playBtn3()">Sound 3</Button>
+        <Button id="btn3" onclick="playBtn3()">Sound 4</Button>
+        <Button id="btn2" onclick="playBtn2()">Sound 5</Button>
+        <Button id="btn2" onclick="playBtn2()">Sound 6</Button>
+        <Button id="btn2" onclick="playBtn2()">Sound 7</Button>
+        <Button id="btn2" onclick="playBtn2()">Sound 8</Button>
+        <Button id="btn2" onclick="playBtn2()">Sound 9</Button>
+
+        </div>
+        <audio id="myAudio1">
+            <source src="shot gun.mp3">
+        </audio>
+        <audio id="myAudio2">
+            <source src="load.mp3">
+        </audio>
+        <audio id="myAudio3">
+            <source src="fireInHole.mp3">
+        </audio>
+        <audio id="myAudio4">
+            <source src="counter_strike-sms(1).mp3">
+        </audio>
+        <audio id="myAudio5">
+            <source src="counter_strike.mp3">
+        </audio>
+    </div>
+    <script>
+        function playBtn1(){
+            x=document.getElementById("myAudio1")
+            x.play()
+        }
+        function playBtn2(){
+            x=document.getElementById("myAudio2")
+            x.play()
+        }
+        function playBtn3(){
+            x=document.getElementById("myAudio3")
+            x.play()
+        }
+
+        document.addEventListener('keydown', function(e) {
+        if (e.keyCode == 65 ) {
+        document.getElementById('myAudio1').play();
+        }});
+        document.addEventListener('keydown', function(e) {
+        if (e.keyCode == 83 ) {
+        document.getElementById('myAudio2').play();
+        }});
+        document.addEventListener('keydown', function(e) {
+            if (e.keyCode == 68 ) {
+        document.getElementById('myAudio3').play();
+        }});
+        document.addEventListener('keydown', function(e) {
+            if (e.keyCode == 70 ) {
+        document.getElementById('myAudio4').play();
+        }});
+
+        document.addEventListener('keydown', function(e) {
+        if (e.keyCode == 71 ) {
+        document.getElementById('myAudio5').play();
+        }});
+
+        document.addEventListener('keydown', function(e) {
+        if (e.keyCode == 72 ) {
+        document.getElementById('myAudio1').play();
+        }});
+
+        document.addEventListener('keydown', function(e) {
+        if (e.keyCode == 73 ) {
+        document.getElementById('myAudio2').play();
+        }});
+
+        document.addEventListener('keydown', function(e) {
+        if (e.keyCode == 75 ) {
+        document.getElementById('myAudio3').play();
+        }});
+
+    </script>
+</body>
+</html>
